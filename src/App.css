@@ -1,0 +1,19 @@
+*{
+    /* background-color: aqua; */
+    font-family: 'Epilogue';
+}
+
+:root{
+    --blue: #00A2E1;
+    --darkblue: #3A5295;
+    --white: #fff;
+    --black: #000;
+    --header-height: 60px;
+    --header-height-mobile: 150px;
+    --dark-bg: #221f1f;
+    --light-bg: white;
+    --footer-bg: #373232;
+    --transparent-bg: rgba(20, 20, 20, 0.7);
+    --grey: #CED3D8;
+    
+  }

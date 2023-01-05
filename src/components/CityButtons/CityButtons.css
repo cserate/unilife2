@@ -1,0 +1,14 @@
+.city-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+    width: 302px;
+    
+
+}
+.city-buttons > p{
+    text-align: center;
+    font-weight: bold;
+    
+}

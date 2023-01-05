@@ -1,0 +1,31 @@
+.banner2{
+    display: flex;
+}
+
+.searchandcompare-container{
+    margin-left: 80px;
+    margin-top: 48px;
+    width: 40%;
+}
+
+.best-selection, .your-favorite {
+    display: flex;
+    
+}
+
+.house-hand{
+    width: 5rem;
+}
+
+.best-selection-text, .your-favorite-text{
+    margin-left: 12px;
+}
+
+.searchandcompare-btn{
+    background-color: var(--darkblue);
+    color: var(--white);
+    border-radius: 8px;
+    margin-left: 45px ;
+    padding: 8px; 
+}
+

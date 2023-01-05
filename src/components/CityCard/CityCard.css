@@ -1,0 +1,11 @@
+.city-info-top{
+padding-top: 80px;
+color: var(--white);
+font-size: 20px;
+
+}
+
+.city-info-bottom{
+    color: var(--white);
+    font-size: 15px;
+}

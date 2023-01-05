@@ -1,0 +1,87 @@
+.footer{
+    background-color: var(--blue);
+    color: white;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.keep-in-touch{
+    width: 40%;
+    margin-left: 60px;
+    
+}
+
+.lets-socialize{
+    width: 60%;
+    margin-left: 100px;
+}
+
+.facebook, .twitter, .instagram{
+    display: flex;
+    margin: 10px;
+}
+.facebook > p {
+    margin-left: 8px;
+}
+
+.twitter > p{
+    margin-left: 8px;
+}
+
+.instagram > p{
+    margin-left: 8px;
+}
+
+.your-email{
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+    width: 100%
+}
+
+.black-bar{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.left-side{
+    display: flex;
+    padding: 12px;
+    font-size: small;
+    width: ;
+}
+.left-side > p{
+margin: 8px;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: small;
+    margin-right: 200px;
+}
+
+.trademark{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+
+}
+
+.right-side, .trademark > p{
+    margin: 8px;
+    }
