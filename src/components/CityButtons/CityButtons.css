@@ -4,9 +4,15 @@
     justify-content: center;
     height: 88px;
     width: 302px;
-    
+}
+
+.city-buttons:hover{
+    background-color: var(--darkblue);
+    color: var(--grey);
+    border-radius: 24px;
 
 }
+
 .city-buttons > p{
     text-align: center;
     font-weight: bold;
