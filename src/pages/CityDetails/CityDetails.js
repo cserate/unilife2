@@ -3,14 +3,18 @@ import Banner from '../../components/Banner/Banner'
 import HomeCards from '../../components/HomeCards/HomeCards'
 // import students from '../../../assets/person.png'
 import './CityDetails.css'
+import { useParams } from 'react-router-dom'
 
 function CityDetails() {
+
+    const cityId
   return (
     <div className='city-details-page'>
-        <Banner />
+        <p>Hello World</p>
+        {/* <Banner />
         <p>Search Bar</p>
         <div className='home-cards-container'>
-            <h3>? homes in Leeds</h3>
+            <h3>? homes in {}</h3>
             <HomeCards />
         </div>
         <div className='about-city-container'>
@@ -20,7 +24,7 @@ function CityDetails() {
             </div>
             {/* <img src='`${students} `'/> */}
             
-        </div>
+        {/* </div>  */}
     </div>
   )
 }
