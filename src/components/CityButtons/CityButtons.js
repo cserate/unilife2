@@ -10,6 +10,9 @@ function CityButtons({city}) {
     //create state to hold cities
     const [cities, setCities] = React.useState([])
 
+    //create state for index of cities
+    // // const [index, setIndex] = React.useState([])
+
     //call api to direct to correct city
     React.useEffect(
        ()=>{

@@ -4,6 +4,8 @@ import './SeeAllCities.css'
 import Banner from '../../components/Banner/Banner'
 import CityButtons from '../../components/CityButtons/CityButtons'
 import Footer from '../../components/Footer/Footer'
+import CityCard from '../../components/CityCard/CityCard'
+
 
 
 
