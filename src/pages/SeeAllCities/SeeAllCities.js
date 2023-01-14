@@ -23,7 +23,7 @@ function SeeAllCities() {
           axios.get(`${baseUrl}/cities?limit=30`)
           // https://unilife-server.herokuapp.com/cities
           .then (res =>{
-            console.log(res.data.response);
+            // console.log(res.data.response);
             //store the data from the api into state
             setCities(res.data.response)
           })

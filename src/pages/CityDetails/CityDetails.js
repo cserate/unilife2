@@ -6,34 +6,23 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import PropertyCard from '../../components/PropertyCard/PropertyCard'
 
-function CityDetails({property}) {
+function CityDetails({property, length, address}) {
     const baseUrl = "https://unilife-server.herokuapp.com";
     
+    //need city id from url 
+    const {id}= useParams()
 
-    //create state to hold cities
-    const [cities, setCities] = React.useState([])
+    // console.log(id)
+
+    //create state to hold properties
     const [properties, setProperties] = React.useState([])
 
 
     //call api to direct to correct city
-    React.useEffect(
-       ()=>{
-            //call api to get cities
-            axios.get(`${baseUrl}/cities`)
-            // https://unilife-server.herokuapp.com/cities
-            .then (res =>{
-              console.log(res.data.response);
-              //store the data from the api into state
-             setCities(res.data.response)
-        
-            })
-            .catch(err => console.log(err))
-      }, []
-      )
-      React.useEffect(
+   React.useEffect(
         ()=>{
              //call api to get properties
-             axios.get(`${baseUrl}/properties/city/:city_id`)
+             axios.get(`${baseUrl}/properties/city/${id}`)
              // https://unilife-server.herokuapp.com/cities
              .then (res =>{
                console.log(res.data.response);
@@ -48,22 +37,24 @@ function CityDetails({property}) {
     
   return (
     <div className='city-details-page'>
-        <p>Hello World</p>
         <Banner />
         <p>Search Bar</p>
-        <div className='home-cards-container'>
-            <h3>? homes in ?</h3>
+        <div className='property-cards-container'>
+            <h3>{`${length} homes in ${address}`}</h3>
             
-            properties.map(item=> <PropertyCard     
+            {
+            properties.map(item => <PropertyCard     
+                                          
                                           property={item} 
-                                          image={item.images}
-                                           />)
-
-                               />
+                                          image={item.images[0]} 
+                                          length={item.length}
+                                          address={item.address.city}/>)
+            }
+                              
         </div>
         <div className='about-city-container'>
             <div className='left-side-city'>
-                <h3>Being a student in ?</h3>
+                {/* <h3>Being a student in {property.address.city}</h3> */}
                 <p>?api data</p>
             </div>
             {/* <img src='`${students} `'/> */}

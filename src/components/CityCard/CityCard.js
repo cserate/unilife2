@@ -11,7 +11,6 @@ function CityCard({city, imgUrl, imgheight, imgwidth, borderRadius}) {
         backgroundSize:'cover',
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
-        backdropFilter: "blur: 2px",
         margin: "5px",
         height: "225px",
         borderRadius: "24px",

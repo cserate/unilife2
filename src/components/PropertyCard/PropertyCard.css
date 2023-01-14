@@ -1,1 +1,51 @@
+.property-card-container{
+margin-top: var(--header-height);
 
+
+
+}
+
+.card-blue-label{
+    background-color: var(--darkblue);
+    color: var(--white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.left-side{
+    display: block;
+}
+
+.right-side{
+    margin: 12px;
+}
+
+.beds, .baths{
+margin: 8px;
+}
+
+.location{
+    background-color: var(--white);
+    height: 100px;
+}
+
+.property-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view{
+    background-color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon{
+    padding: 8px;
+}

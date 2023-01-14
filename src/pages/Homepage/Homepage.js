@@ -7,7 +7,7 @@ import Compare from '../../components/Compare/Compare';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import './Homepage.css'
-
+import { icons } from 'react-icons';
 function Homepage() {
 
 const baseUrl = "https://unilife-server.herokuapp.com";
