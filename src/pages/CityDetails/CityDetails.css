@@ -2,9 +2,15 @@
  text-align: center;
 }
 
+.search-bar{
+
+}
+
 .property-cards-container{
+margin-top: var(--header-height);
  
 }
+
 
 .about-city-container{
 

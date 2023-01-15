@@ -38,9 +38,9 @@ function CityDetails({property, length, address}) {
   return (
     <div className='city-details-page'>
         <Banner />
-        <p>Search Bar</p>
+        <p className='search-bar'>Search Bar</p>
         <div className='property-cards-container'>
-            <h3>{`${length} homes in ${address}`}</h3>
+            {/* <h3>{`${property.length} homes in ${property.address.city}`}</h3> */}
             
             {
             properties.map(item => <PropertyCard     
