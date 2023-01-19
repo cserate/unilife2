@@ -10,16 +10,30 @@
 margin-top: var(--header-height);
  display: flex;
  flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
  
 }
 
 
 .about-city-container{
+background-color: #F6FAFD;
+border-radius: 24px;
 
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 24px;
 
 }
 
 .left-side-city{
-
+width: 50%;
     
+}
+
+.students{
+width: 50%;
+border-radius: 24px;
+
 }
