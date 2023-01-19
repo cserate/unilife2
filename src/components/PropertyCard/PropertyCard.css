@@ -2,7 +2,8 @@
 margin-top: var(--header-height);
 position: relative;
 height: 600px;
-
+/* border: 2px solid blue; */
+margin-right: 24px;
 }
 
 /* .card-info{
@@ -13,21 +14,21 @@ top: 80%;
 } */
 .card-blue-label{
     background-color: var(--darkblue);
+    /* border: 2px solid red; */
     color: var(--white);
-    height: 40px;
+    height: fit-content;
     width: 100%;
     position: absolute;
-    top: 85%;
+    top: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    
 }
 
 .left-side{
-    display: block;
+    display: block; 
 }
-
 
 .right-side{
     margin: 12px;
@@ -35,35 +36,45 @@ top: 80%;
 
 .beds, .baths{
 margin: 8px;
+
 }
 
 .location{
     background-color: var(--white);
     height: 60px;
     position: absolute;
-    top: 90%;
+    top: 130%;
     width: 100%;
+    height: fit-content;
     display: flex;
+    border: 1px solid var(--grey);
 }
-
 .property-type{
     position: absolute;
-    top: 95%;
+    top: 50%;
     width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* border: 1px solid var(--grey); */
 }
 
+.address{
+    margin-left: 12px;
+}
 .view{
     background-color: var(--white);
-    height: 60px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 100%;
+    top: 150%;
     width: 100%;
+    border: 1px solid var(--grey);
+    border-radius: 0 0 24px 24px;
+    
 }
 
 .home-icon{

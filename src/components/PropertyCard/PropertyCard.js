@@ -13,7 +13,7 @@ function PropertyCard({property, image}) {
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
         backdropFilter: "blur: 2px",
-        marginBottom: "200px",
+        marginBottom: "250px",
         height: "260px",
         borderRadius: "24px 24px 0 0",
         width: "400px",
@@ -25,8 +25,8 @@ function PropertyCard({property, image}) {
         <div className='card-info'>
             <div className='card-blue-label'>
                     <div className='left-side'>
-                        <BsCurrencyPound className='pound'/>
-                        <h3>{property.rent}</h3>
+                        <h3 className='pound'> <BsCurrencyPound />
+                        {property.rent}</h3>
                         <small>pppw including bills</small>
                     </div>
                     <div className='right-side'>

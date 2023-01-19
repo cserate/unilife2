@@ -16,7 +16,7 @@ function CityDetails({property, length, address}) {
 
     //create state to hold properties
     const [properties, setProperties] = React.useState([])
-
+    // const [numProperties, setNumProperties] = React.useState([])
 
     //call api to direct to correct city
    React.useEffect(
@@ -28,7 +28,7 @@ function CityDetails({property, length, address}) {
                console.log(res.data.response);
                //store the data from the api into state
               setProperties(res.data.response)
-         
+              // setNumProperties(res.data.total)
              })
              .catch(err => console.log(err))
        }, []
@@ -40,8 +40,8 @@ function CityDetails({property, length, address}) {
         <Banner />
         <p className='search-bar'>Search Bar</p>
         <div className='property-cards-container'>
-            {/* <h3>{`${property.length} homes in ${property.address.city}`}</h3> */}
-            
+            {/* <h3>{`${length} homes in ${property.address.city}`}</h3>
+             */}
             {
             properties.map(item => <PropertyCard     
                                           
