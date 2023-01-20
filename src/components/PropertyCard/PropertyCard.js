@@ -4,7 +4,7 @@ import {MdBed, MdOutlineBathtub, MdLocationPin, MdOutlineHome} from 'react-icons
 import {BsCurrencyPound} from 'react-icons/bs'
 
 
-function PropertyCard({property, image}) {
+function PropertyCard({property}) {
 
     //create an object to store all the card details 
     const propImageStyle={
@@ -47,11 +47,12 @@ function PropertyCard({property, image}) {
                     <small>{`${property.address.street}, ${property.address.city}, ${property.address.postcode}`}</small>
                 </div>
             </div> 
-            {/* <Link to={`/`} */}
+            <Link to={`homedetail/${property._id}/`} >
             <div className='view'>
                 <MdOutlineHome className='home-icon'/>
                 <h4>View Home</h4>
-            </div>     
+            </div> 
+            </Link>    
         </div>
     </div>
   )

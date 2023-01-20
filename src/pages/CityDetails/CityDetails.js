@@ -62,19 +62,17 @@ function CityDetails() {
            {
             properties.map(item => <PropertyCard     
                                           key={item._id}
-                                          property={item} 
-                                          image={item.images[0]} />)
+                                          property={item} />)
+                                        //   image={item.images[0]} 
             }
                               
         </div>
         <div className='about-city-container'>
             <div className='left-side-city'>
-               {/* I can't figure this out! */}
-                {/* <h3>`Being a student in ${properties.address.city}</h3> */}
-                <p>?api data</p>
+                <h3>Being a student in {city?.name}</h3> 
+                <p>{city.student_life}</p>
             </div>
             <img className='students' src={students} />
-            
          </div> 
     </div>
   )
