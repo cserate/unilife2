@@ -8,7 +8,8 @@ function PropertyCard({property, image}) {
 
     //create an object to store all the card details 
     const propImageStyle={
-        backgroundImage: `url("${image}")`,
+        // backgroundImage: `url("${image}")`,
+        backgroundImage: `url("${property?.images[0]}")`,
         backgroundSize:'cover',
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
