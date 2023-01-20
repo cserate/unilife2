@@ -1,3 +1,4 @@
 .home-detail-container{
     margin-top: var(--header-height);
+    background-color: brown;
 }

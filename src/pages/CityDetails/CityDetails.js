@@ -11,7 +11,7 @@ function CityDetails() {
     
     //need city id from url 
     const {cityid}= useParams()
-    // console.log(id)
+    // console.log(cityid)
 
     //create state to hold city
     const [city, setCity] = React.useState()
@@ -70,7 +70,7 @@ function CityDetails() {
         <div className='about-city-container'>
             <div className='left-side-city'>
                 <h3>Being a student in {city?.name}</h3> 
-                <p>{city.student_life}</p>
+                <p>{city?.student_life}</p>
             </div>
             <img className='students' src={students} />
          </div> 

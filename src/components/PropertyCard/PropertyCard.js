@@ -2,9 +2,12 @@ import React from 'react'
 import './PropertyCard.css'
 import {MdBed, MdOutlineBathtub, MdLocationPin, MdOutlineHome} from 'react-icons/md'
 import {BsCurrencyPound} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 
 function PropertyCard({property}) {
+
+    
 
     //create an object to store all the card details 
     const propImageStyle={
@@ -47,11 +50,11 @@ function PropertyCard({property}) {
                     <small>{`${property.address.street}, ${property.address.city}, ${property.address.postcode}`}</small>
                 </div>
             </div> 
-            <Link to={`homedetail/${property._id}/`} >
-            <div className='view'>
-                <MdOutlineHome className='home-icon'/>
-                <h4>View Home</h4>
-            </div> 
+            <Link to={`/homedetail/${property._id}`} >
+                <div className='view'>
+                    <MdOutlineHome className='home-icon'/>
+                    <h4>View Home</h4>
+                </div> 
             </Link>    
         </div>
     </div>

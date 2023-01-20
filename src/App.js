@@ -7,7 +7,7 @@ import SeeAllCities from './pages/SeeAllCities/SeeAllCities';
 import Footer from './components/Footer/Footer';
 import CityDetails from './pages/CityDetails/CityDetails';
 import HomeDetail from './pages/HomeDetail/HomeDetail';
-import HomeDetail from './pages/HomeDetail/HomeDetail';
+
 
 
 
