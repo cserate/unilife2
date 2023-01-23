@@ -1,4 +1,75 @@
 .home-detail-container{
     margin-top: var(--header-height);
-    background-color: brown;
+    /* background-color: brown; */
 }
+
+.top-row{
+ display: flex;
+}
+
+.photo-grid{
+ width: 50%;
+}
+
+.home-big{
+width: 100%;
+}
+
+.home-3pic {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.home2, .home3, .home4{
+width: 33.3%;
+/* margin: 4px; */
+}
+.property-overview{
+    width: 50%;
+    border: 1px solid #CED3D8;
+    border-radius: 24px;
+}
+
+.address{
+    
+    text-align: center;
+}
+
+.line-break{
+    width: 85%;
+    color: var(--gray);
+}
+
+.row1, .row2{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bedrooms, .bathrooms, .property-type-info, .price, .furnished-info, .available-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.bedroom-info, .bathroom-info, .price-info{
+    display: flex;
+    align-items: center;
+    color: var(--darkblue);
+    
+}
+
+.property-type-info > p, .furnished-info > p, .available-info > p{
+    color: var(--darkblue);
+    
+}
+.bed-icon, .bath-icon{
+   padding: 8px;
+}
+
+
+
