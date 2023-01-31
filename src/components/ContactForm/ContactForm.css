@@ -1,0 +1,28 @@
+.form-container{
+    /* display: flex; */
+   border: 1px solid red;
+}
+
+.form-heading{
+  display: block;
+  border: 1px solid blue;
+}
+
+.form-body{
+    display: flex;
+    border: 1px solid green;
+}
+
+.form-area-left{
+    border: 1px solid pink;
+
+}
+
+.form-area-right{
+    border: 1px solid purple;
+    
+}
+
+button{
+    border: 1px solid yellowgreen;
+}

@@ -33,7 +33,7 @@ function HomeDetail() {
     <div className='home-detail-container'>
         <div className='top-row'>
             <div className='photo-grid'>
-              <img className='home-big' src={home.images[0]} />
+              <img className='home-big' src={home?.images[0]} />
               <div className='home-3pic'>
                 <img className='home2' src={home.images[1]} />
                 <img className='home3' src={home.images[2]} />

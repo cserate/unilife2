@@ -7,6 +7,7 @@ import SeeAllCities from './pages/SeeAllCities/SeeAllCities';
 import Footer from './components/Footer/Footer';
 import CityDetails from './pages/CityDetails/CityDetails';
 import HomeDetail from './pages/HomeDetail/HomeDetail';
+import BookViewing from './pages/BookViewing/BookViewing';
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/seeallcities' element={<SeeAllCities />} />
             <Route path='/citydetails/:cityid' element={<CityDetails />} />
             <Route path='/homedetail/:homeid' element={<HomeDetail />} />
+            <Route path='/bookviewing/:homeid' element={<BookViewing />} />
           </Routes>
         <Footer />
       </BrowserRouter>
