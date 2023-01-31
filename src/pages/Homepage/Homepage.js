@@ -19,7 +19,7 @@ const [cities, setCities] = React.useState([])
 React.useEffect(
   ()=>{
       //call api to get cities
-      axios.get(`${baseUrl}/cities`)
+      axios.get(`${baseUrl}/cities?limit=9`)
       // https://unilife-server.herokuapp.com/cities
       .then (res =>{
         console.log(res.data.response);
@@ -40,9 +40,7 @@ React.useEffect(
       <div className='accomodations-container'>
         <h3>Student accomodations in our top cities</h3>
         <div className='city-card-container'>
-          {/* {
-          cities.map (item=> <p>{item.name}</p>)
-          } */}
+       
           {
           cities.map(item=> <CityCard     
                                           city={item}
@@ -51,6 +49,7 @@ React.useEffect(
                                           
                                           
           } 
+          
          </div>
         {/* onClick needed below to link to the See All Cities Page */}
         <Link to={`/seeallcities/`}>

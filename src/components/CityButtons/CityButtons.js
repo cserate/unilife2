@@ -48,7 +48,7 @@ function CityButtons({city}) {
                 <p className="see-details">See Details</p>
            </Link> */}
                 <div className='city-buttons'>
-                    <Link to={`/citydetails/${city._id}`}>
+                    <Link className="city-buttons-link" to={`/citydetails/${city._id}`}>
                         <p>{city.name}</p>
                     </Link>
                 </div>

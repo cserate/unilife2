@@ -56,7 +56,7 @@ function CityDetails() {
         <p className='search-bar'>Search Bar</p>
         <div className='city-property-count'>
             {/* <h3>{properties.length} in {properties[0]?.address.city}</h3>    */}
-            <h3>{city?.property_count} in {city?.name}</h3>
+            <h3>{city?.property_count} homes in {city?.name}</h3>
         </div>
         <div className='property-cards-container'>
            {

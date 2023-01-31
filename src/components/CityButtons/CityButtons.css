@@ -6,6 +6,11 @@
     width: 302px;
 }
 
+.city-buttons-link{
+    text-decoration: none;
+    color: black
+}
+
 .city-buttons:hover{
     background-color: var(--darkblue);
     color: var(--grey);
@@ -18,3 +23,4 @@
     font-weight: bold;
     
 }
+
