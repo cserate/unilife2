@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom'
 import {MdBed, MdOutlineBathtub} from 'react-icons/md'
 import {BsCurrencyPound, BsHeart } from 'react-icons/bs'
+import { AiOutlineCheck } from "react-icons/ai";
 
 function HomeDetail() {
     const baseUrl = "https://unilife-server.herokuapp.com";
@@ -15,8 +16,11 @@ function HomeDetail() {
     //create state to hold home data
     const [home, setHome] = React.useState([])
 
-    //create stat to hold images
+    //create state to hold images
     const [images, setImages] = React.useState([])
+
+    //create state to hold key features
+    const [features, setFeatures] = React.useState([])
 
     //call api to get detailed info about specific property
     React.useEffect(
@@ -30,6 +34,7 @@ function HomeDetail() {
                //store the data from the api into state
               setHome(res.data)
               setImages(res.data.images)
+              setFeatures(res.data.key_features)
              })
              .catch(err => console.log(err))
        }, []
@@ -105,18 +110,37 @@ function HomeDetail() {
             <p>{home?.property_description}</p>
           </div>
           <div className='bedroom-prices'>
-            <h3>Bedroom Prices</h3>
-            <div className='bedroom1'>
-              <p>Bedroom 1</p>
-              <div className='bedroom1-rent'>
-                <BsCurrencyPound className='pound-icon'/>
-                <p>{home?.bedroom_prices?.bedroom_one} per week</p>
-              </div>
-            </div>
+            <p>Render mapping here</p>
+            <p>Render mapping bedroom component here</p>  
+          </div>
+        </div>
+        <div className='bottom-row'>
+          
+            <div className='key-features-list'>
+                <h3>Key Features</h3>
+                <div className='feature0'>
+                  <AiOutlineCheck className='check' />
+                  <p>{features[0]}</p>
+                </div>
+                <div className='feature1'>
+                    <AiOutlineCheck className='check' />
+                    <p>{features[1]}</p>
+                </div>
+                <div className='feature2'>
+                  <AiOutlineCheck className='check' />
+                  <p>{features[2]}</p>
+                </div>
+                <div className='feature3'>
+                  <AiOutlineCheck className='check' />
+                  <p>{features[3]}</p>
+                </div>
+                <div className='feature4'>
+                  <AiOutlineCheck className='check' />
+                  <p>{features[4]}</p>
+                </div>
           </div>
         </div>
     </div>
-
     
   )
 }
