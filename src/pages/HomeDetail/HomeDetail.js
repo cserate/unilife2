@@ -5,10 +5,14 @@ import { useParams } from 'react-router-dom'
 import {MdBed, MdOutlineBathtub} from 'react-icons/md'
 import {BsCurrencyPound, BsHeart } from 'react-icons/bs'
 import { AiOutlineCheck } from "react-icons/ai";
+import {BookModal} from 'react-modal'
+import BedroomPrices from '../../components/BedroomPrices/BedroomPrices';
+
 
 function HomeDetail() {
+
     const baseUrl = "https://unilife-server.herokuapp.com";
-    
+
     //need home id from url 
     const {homeid}= useParams()
     // console.log(homeid)
@@ -21,6 +25,9 @@ function HomeDetail() {
 
     //create state to hold key features
     const [features, setFeatures] = React.useState([])
+
+    //create state to hold bedroom prices
+    const [bedroomPrices, setBedroomPrices] = React.useState({})
 
     //call api to get detailed info about specific property
     React.useEffect(
@@ -35,6 +42,7 @@ function HomeDetail() {
               setHome(res.data)
               setImages(res.data.images)
               setFeatures(res.data.key_features)
+              setBedroomPrices(res.data.bedroom_prices)
              })
              .catch(err => console.log(err))
        }, []
@@ -100,6 +108,8 @@ function HomeDetail() {
                     <BsHeart className='heart-icon' />
                     <p>Shortlist</p>
                   </div>
+                  {/* // <Link to={} */}
+                  {/* <button onClick={BookModal}>Book Viewing</button> */}
                   <button>Book Viewing</button>
               </div>
             </div>
@@ -110,8 +120,10 @@ function HomeDetail() {
             <p>{home?.property_description}</p>
           </div>
           <div className='bedroom-prices'>
-            <p>Render mapping here</p>
-            <p>Render mapping bedroom component here</p>  
+            <h3>Bedroom Prices</h3>
+            <BedroomPrices          prices={bedroomPrices}
+                                    bedroomData={home} />
+            {/* <p>Render mapping bedroom component here</p>   */}
           </div>
         </div>
         <div className='bottom-row'>
